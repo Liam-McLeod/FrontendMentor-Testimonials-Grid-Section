@@ -1,0 +1,137 @@
+:root {
+    --Moderate-violet: hsl(263, 55%, 52%);
+    --Very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --Very-dark-blackish-blue: hsl(219, 29%, 14%);
+    --White: hsl(0, 0%, 100%);
+
+    --Light-gray: hsl(0, 0%, 81%);
+    --Light-grayish-blue: hsl(210, 46%, 95%);
+
+    --font-family-default: 'Barlow Semi Condensed', sans-serif;
+    --fw-medium: 500;
+    --fw-semibold: 600;
+
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  font: inherit;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+    font-size: 13px;
+    font-family: var(--font-family-default);
+    font-weight: var(--fw-medium);
+    background-color: var(--Light-grayish-blue);
+    color: white;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.flex-group {
+    display: flex;
+    gap: 1rem;
+}
+
+.Testimonials {
+    margin: 2rem 1rem;
+    display: grid;
+    gap: 1rem;
+    max-width: 68rem;
+}
+
+.card {
+    background-color: var(--background);
+    border-radius: 0.5rem;
+    padding: 2rem;
+    display: grid;
+    gap: 1rem;
+}
+
+.card[data-item-type="background1"] {
+    --background: var(--Moderate-violet);
+    background-image: url("images/bg-pattern-quotation.svg");
+    background-repeat: no-repeat;
+    background-position-x: 95%;
+}
+
+.card[data-item-type="background2"] {
+    --background: var(--Very-dark-grayish-blue);
+}
+
+.card[data-item-type="background3"] {
+    --background: var(--White);
+    color: black;
+}
+
+.card[data-item-type="background4"] {
+    --background: var(--Very-dark-blackish-blue);
+}
+
+.card[data-item-type="background5"] {
+    --background: var(--White);
+    color: black;
+}
+
+.card-image {
+    border-radius: 100%;
+    width: 25px;
+}
+
+.card-name span {
+    display: block;
+    opacity: 0.5
+}
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: var(--fw-semibold);
+}
+
+.card-desc {
+    opacity: 0.7;
+}
+
+@media (min-width: 700px) {
+    .Testimonials {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .card {
+        align-content: start;
+    }
+
+    .card[data-item-type="background1"] {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        background-position-x: 85%;
+    }
+
+    .card[data-item-type="background3"] {
+        grid-column: 1;
+    }
+
+    .card[data-item-type="background4"] {
+        grid-column-start: 2;
+        grid-column-end: 4;
+    }
+
+    .card[data-item-type="background5"] {
+        grid-column: 4;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+}
