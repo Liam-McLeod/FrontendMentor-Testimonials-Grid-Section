@@ -17,8 +17,8 @@ This is a solution to the [Testimonials grid section challenge on Frontend Mento
 
 ### Links
 
--  [Solution URL](https://www.frontendmentor.io/solutions/3-column-preview-card-component-XxyviDk9iy)
--  [Live Site URL](https://liam-mcleod.github.io/FrontendMentor-3Column-Card-Component/)
+-  [Solution URL](https://www.frontendmentor.io/solutions/testimonials-grid-section--jS_nZR8Z_)
+-  [Live Site URL](https://liam-mcleod.github.io/FrontendMentor-Testimonials-Grid-Section/)
 
 ## Author
 - Frontend Mentor - [@Liam-McLeod](https://www.frontendmentor.io/profile/Liam-McLeod)
